@@ -1,0 +1,55 @@
+.books-search {
+  padding-left: 20px;
+}
+.books-search-bar input {
+  border: 1px solid gray;
+  border-radius: 10px;
+  color: crimson;
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  margin: 30px 20px;
+  padding: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.books-search-bar input:focus {
+  border-color: salmon;
+  box-shadow: 0 0 5px rgb(221, 21, 121);
+  outline: none;
+}
+
+.books-search-result {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.books-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 30px;
+}
+
+@media (max-width: 768px) {
+  .books-search-bar input {
+    font-size: 14px;
+  }
+
+  .books-grid {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .books-search-bar input {
+    font-size: 12px;
+  }
+
+  .books-grid {
+    gap: 5px;
+  }
+}

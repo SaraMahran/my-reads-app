@@ -1,0 +1,87 @@
+.book-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.book-cover {
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.book-title,
+.book-author {
+  color: rgb(82, 75, 75);
+  /* margin-right: 40px; */
+  font-size: 20px;
+}
+
+.book-author {
+  color: saddlebrown;
+}
+.book-title h6,
+.book-author h6 {
+  margin: 30px 0;
+  padding: 0 5px;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.book-author h6 {
+  margin-top: 0;
+}
+.book {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 210px;
+}
+
+select {
+  background-color: crimson;
+  border-radius: 10px;
+  padding: 20px 10px;
+  border: 1px solid rgb(82, 75, 75);
+  color: white;
+  text-align: center;
+  width: 10vw;
+  height: 12vh;
+  cursor: pointer;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .book {
+    width: 160px;
+  }
+
+  .book-cover {
+    width: 100px;
+    height: 140px;
+  }
+
+  .book-title h6,
+  .book-author h6 {
+    font-size: 0.9rem;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .book {
+    width: 120px;
+    margin: 5px;
+  }
+
+  .book-cover {
+    width: 80px;
+    height: 110px;
+  }
+
+  .book-title h6,
+  .book-author h6 {
+    font-size: 0.8rem;
+    margin: 5px 0;
+  }
+}
