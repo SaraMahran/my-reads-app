@@ -11,9 +11,11 @@ for new books to add to their shelves.
    git clone https://github.com/SaraMahran/my-reads-app.git
    <br/>
 2. cd to the folder:
+   <br/>
    cd "my-reads-app"
    <br/>
-3. Npm commands:
+4. Npm commands:
+   <br/>
     npm install
    <br/>
     npm start
