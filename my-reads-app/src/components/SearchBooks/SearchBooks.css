@@ -5,10 +5,10 @@
   border: 1px solid gray;
   border-radius: 10px;
   color: crimson;
-  width: 100%;
+  width: 80%;
   height: 100%;
   max-width: 1200px;
-  margin: 30px 20px;
+  margin: 50px 70px;
   padding: 10px;
   font-size: 15px;
   line-height: 1.5;
@@ -32,6 +32,13 @@
   justify-content: center;
   gap: 20px;
   padding: 0 30px;
+}
+
+.no-result-message {
+  color: crimson;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 @media (max-width: 768px) {

@@ -1,7 +1,10 @@
 import "./Book.css";
-const Book = ({ book, onMoveToAnotherShelf }) => {
+const Book = ({ book, onMoveToShelf }) => {
+  const thumbnail = book.imageLinks
+    ? book.imageLinks.thumbnail
+    : "url/to/placeholder-image.jpg";
   const handleShelfChange = (event) => {
-    onMoveToAnotherShelf(book, event.target.value);
+    onMoveToShelf(book, event.target.value);
   };
 
   return (
@@ -12,7 +15,7 @@ const Book = ({ book, onMoveToAnotherShelf }) => {
           style={{
             width: 130,
             height: 170,
-            backgroundImage: `url(${book.imageLinks.thumbnail})`,
+            backgroundImage: `url(${thumbnail})`,
           }}
         ></section>
         <section className="book-shelf-changer">
@@ -28,7 +31,7 @@ const Book = ({ book, onMoveToAnotherShelf }) => {
         <h6>{book.title}</h6>
       </section>
       <section className="book-author">
-        <h6>{book.authors.join(", ")}</h6>
+        <h6>{book.authors ? book.authors.join(", ") : "Unknown Author"}</h6>
       </section>
     </section>
   );

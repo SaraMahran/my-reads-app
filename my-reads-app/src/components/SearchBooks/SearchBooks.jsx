@@ -13,6 +13,7 @@ const SearchBooks = () => {
       setShelvedBooks(books);
     });
   }, []);
+
   const handleSearchBooks = (event) => {
     const query = event.target.value;
     setQuery(query);
@@ -61,13 +62,18 @@ const SearchBooks = () => {
           onChange={handleSearchBooks}
         />
       </section>
+
       <section className="books-search-result">
         <ol className="books-grid">
-          {searchResults.map((book) => (
-            <li key={book.id}>
-              <Book book={book} onMoveToAnotherShelf={changeBookShelf} />
-            </li>
-          ))}
+          {searchResults.length > 0 ? (
+            searchResults.map((book) => (
+              <li key={book.id}>
+                <Book book={book} onMoveToAnotherShelf={changeBookShelf} />
+              </li>
+            ))
+          ) : (
+            <li className="no-result-message">No results found</li>
+          )}
         </ol>
       </section>
     </section>

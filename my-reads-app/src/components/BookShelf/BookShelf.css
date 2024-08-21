@@ -13,7 +13,7 @@
   margin-top: 5px;
 }
 /* .book-shelf-currently-reading {
-  margin-left:80px;
+  margin-left: 120px;
 }
 
 .book-shelf-want-to-read {
@@ -21,7 +21,7 @@
 }
 
 .book-shelf-read {
-  margin-left: 190px;
+  margin-left: 100px;
 } */
 .book-shelf-title {
   color: crimson;
@@ -29,48 +29,9 @@
   margin: 3rem;
   font-size: 1.5em;
 }
-.book-shelf-title-currently-reading {
-  margin-left: 1000px;
+.book-shelf-want-to-read .book-shelf-title {
+  margin-left: 10px;
 }
-
-/* @media (max-width: 1024px) {
-  .book-shelf {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .book-shelf-title {
-    font-size: 1.4rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .book-shelf {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .books-grid {
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-    gap: 15px;
-  }
-
-  .book-shelf-title {
-    font-size: 1.2rem;
-    margin: 1.5rem 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .book-shelf-title {
-    font-size: 1rem;
-    margin: 1rem 0;
-  }
-
-  .books-grid {
-    grid-template-columns: 1fr;
-  }
-} */
 
 @media (max-width: 1024px) {
   .book-shelf-title {
