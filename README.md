@@ -9,6 +9,7 @@ for new books to add to their shelves.
 1. Clone the repository:
    
    git clone https://github.com/SaraMahran/my-reads-app.git
+   <br/>
    cd "my-reads-app"
    npm install
    npm start
