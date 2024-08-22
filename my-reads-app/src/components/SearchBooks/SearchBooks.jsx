@@ -68,7 +68,7 @@ const SearchBooks = () => {
           {searchResults.length > 0 ? (
             searchResults.map((book) => (
               <li key={book.id}>
-                <Book book={book} onMoveToAnotherShelf={changeBookShelf} />
+                <Book book={book} onMoveToShelf={changeBookShelf} />
               </li>
             ))
           ) : (
